@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema(
     },
     phone_number: {
       type: String,
+      unique: true,
       required: [true, 'Phone Number is required'],
       validate: {
         validator: function (v) {
