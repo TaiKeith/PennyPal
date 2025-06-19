@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import api from '../services/api';
 
-const loginPage = () => {
+const Login = () => {
   const [formData, setFormData] = useState({
     phone_number: '',
     password: '',
@@ -25,4 +25,4 @@ const loginPage = () => {
   );
 }
 
-export default loginPage;
+export default Login;
